@@ -1,5 +1,11 @@
 {
-  "name": "dashjs-player",
+  "name": "angular-dashjs-player",
+  "description": "An Angular 6 module to make Dash.js integration in Angular really easy",
+  "author": {
+    "name": "Alvaro Escarcha Epic Labs",
+    "email": "aescarcha@epiclabs.io",
+    "url": "https://www.epiclabs.io/"
+  },
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
@@ -7,5 +13,9 @@
   },
   "dependencies": {
     "dashjs": "^2.7.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/epiclabs-io/angular-dashjs-player/issues"
+  },
+  "homepage": "https://github.com/epiclabs-io/angular-dashjs-player#readme"
 }
