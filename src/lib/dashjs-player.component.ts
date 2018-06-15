@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {MediaPlayer, MediaPlayerClass} from 'dashjs';
 
 @Component({
@@ -6,7 +6,7 @@ import {MediaPlayer, MediaPlayerClass} from 'dashjs';
   templateUrl: './dashjs-player.component.html',
   styleUrls: ['./dashjs-player.component.css']
 })
-export class DashjsPlayerComponent implements OnInit {
+export class DashjsPlayerComponent implements OnInit, OnDestroy {
   public player: MediaPlayerClass;
   private _src: string;
 
@@ -24,6 +24,10 @@ export class DashjsPlayerComponent implements OnInit {
   ngOnInit() {
     this.player = MediaPlayer().create();
     this.player.initialize(this.videoPlayer.nativeElement, this._src, this.autoload);
+  }
+
+  ngOnDestroy() {
+    this.player.reset();
   }
 
   public getPlayer(): MediaPlayerClass {
