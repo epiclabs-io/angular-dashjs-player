@@ -1,5 +1,6 @@
 {
   "name": "angular-dashjs-player",
+  "version": "1.0.2",
   "description": "An Angular 6 module to make Dash.js integration in Angular really easy",
   "author": {
     "name": "Alvaro Escarcha Epic Labs",
@@ -17,5 +18,7 @@
   "bugs": {
     "url": "https://github.com/epiclabs-io/angular-dashjs-player/issues"
   },
-  "homepage": "https://github.com/epiclabs-io/angular-dashjs-player#readme"
+  "homepage": "https://github.com/epiclabs-io/angular-dashjs-player#readme",
+  "keywords": "angular, dash.js, dashjs, dash, mss, smooth streaming, video-player, video, streaming, typescript, abr, adaptive bitrate",
+  "license": "BSD-3-Clause"
 }
